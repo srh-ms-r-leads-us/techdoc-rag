@@ -4,4 +4,10 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "marker-pdf>=1.10.2",
+    "pdfminer>=20191125",
+    "pdfminer-six>=20260107",
+    "pi-heif>=0.22.0",
+    "unstructured>=0.22.27",
+]
