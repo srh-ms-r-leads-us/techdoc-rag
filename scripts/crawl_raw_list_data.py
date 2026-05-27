@@ -27,7 +27,7 @@ for page_no in range(4):
 
     soup = BeautifulSoup(html, "lxml")
 
-    # 找主容器
+    # Find main container
     container = soup.select_one(
         "div.views-element-container"
     )
@@ -38,7 +38,7 @@ for page_no in range(4):
         )
         continue
 
-    # 找所有 publication row
+    # Find all publication row
     rows = container.select("div.views-row")
 
     logger.info(
@@ -48,7 +48,7 @@ for page_no in range(4):
     for row in rows:
 
         # =========================
-        # 标题 + 链接
+        # Title + Link
         # =========================
         title = ""
         title_link = ""
@@ -71,7 +71,7 @@ for page_no in range(4):
                 )
 
         # =========================
-        # 发布日期
+        # Publish date
         # =========================
         publish_date = ""
 
@@ -98,7 +98,7 @@ for page_no in range(4):
         })
 
 # =========================
-# 去重
+# Deduplicate
 # =========================
 dedup = {}
 
@@ -112,7 +112,7 @@ logger.info(
 )
 
 # =========================
-# 输出 CSV
+# Output CSV
 # =========================
 with open(
     OUTPUT_CSV,
