@@ -14,5 +14,7 @@ dependencies = [
     "pdfminer>=20191125",
     "pdfminer-six>=20260107",
     "pi-heif>=0.22.0",
+    "psycopg[binary]>=3.3.4",
+    "python-dotenv>=1.2.2",
     "unstructured>=0.22.27",
 ]
