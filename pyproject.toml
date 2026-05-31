@@ -24,4 +24,6 @@ dependencies = [
     "spacy>=3.8.14",
     "textstat>=0.7.13",
     "unstructured>=0.22.27",
+    "wordcloud>=1.9.6",
+    "yake>=0.7.3",
 ]
