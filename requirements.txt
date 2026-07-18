@@ -1,0 +1,12 @@
+
+# PDF text extraction
+pymupdf
+
+# Local vector database
+chromadb
+
+# Local sentence embedding model
+sentence-transformers
+
+# .env file loader
+python-dotenv
